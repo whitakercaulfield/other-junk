@@ -17,7 +17,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
 
     // Color components
     float r = sin(2.0 * uv.x + t1) * 0.5 + 0.5;
-    float g = cos(3.0 * uv.y + t2) * 0.5 + 0.5;
+    float g = cos(4.0 * uv.y + t2) * 0.5 + 0.5;
     float b = sin(4.0 * (uv.x + uv.y) + t1 + t2) * 0.5 + 0.5;
 
     // Output the final color
@@ -26,4 +26,5 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord)
 
 void main() {
     mainImage(gl_FragColor, gl_FragCoord.xy);
+
 }
